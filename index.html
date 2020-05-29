@@ -1,10 +1,126 @@
 <!DOCTYPE html>
-<html lang="ja" dir="ltr">
+<html lang=ja dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
-  </head>
+    <title>Mofo</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="favicon.ico">
+    <script type="text/javascript" src="script.js"></script>
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <body>
-<a href="test.zip" download="test.zip">ダウンロード</a>
+    <header>
+      <div id=top>
+        <a href="index.html"><img id="logo"src="logo.png" alt="logo"></a>
+      </div>
+      <div class="nav">
+      <li><a href="music.html">Music</a></li>
+      <li><a href="#live">Live</a></li>
+      <li><a href="bio.html">Bio</a></li>
+      <li><a href="#cont">Contact</a></li>
+      <li><a href="#sns">Link</a></li>
+      </div>
+      </header>
+      <main>
+        <p id="from"><i class="fas fa-map-marker-alt "></i> Fukuoka/Japan</p>
+        <section id="galla">
+          <article >
+            <img src="1.png" alt="" class="point" onclick="pen()">
+          </article>
+
+          <article>
+            <img src="2.png" alt="" class="point">
+          </article>
+
+          <article>
+            <img src="3.png" alt="" class="point" onload="fadein()">
+          </article>
+
+          <article>
+            <img src="4.png" alt="" class="point" onload="hide()">
+          </article>
+        </section>
+
+      </main>
+
+      <div class="livesec" id="live">
+        <img src="index2.png" class="mokuzi2">
+        <div class="day">
+        <ul>-2020年1月30日(木)
+           @東京キネマ倶楽部
+           開場 : 18:15
+           開演 : 19:00
+        </ul>
+<ul>-2020年1月30日(木)
+@東京キネマ倶楽部
+開場 : 18:15
+開演 : 19:00</ul>
+</div>
+      </div>
+
+      <div class="consec" id="cont">
+        <img src="index3.png" alt="" class="mokuzi"><i class="fas fa-microphone-alt fa-3x"></i>
+
+       <div id="mailbox">
+        <p id="mail">Mail</p>
+       <p id="mailp">mofo0327@gmail.com</p>
+      </div>
+      </div>
+<div id="mask"  onclick="pen3()">
+</div>
+
+<section id="modal">
+  <div class="movie-wrap">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/v7TAWHKYTYA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</section>
+
+<section id="modal2">
+  <div class="movie-wrap">
+<iframe width="673" height="379" src="https://www.youtube.com/embed/MZQm7CPclZc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</section>
+
   </body>
+
+  <footer>
+    <div id="sns">
+    <a href="https://open.spotify.com/album/69daI64fYAT6R41YYVu0aE?si=8C8urKzXTZmLoqhepfMcDA"><i class="fab fa-spotify fa-2x"></i></a>
+    <a href="https://music.apple.com/jp/album/turn-on-tune-in-single/1497476949"><i class="fab fa-apple fa-2x"></i></a>
+    <a href="https://www.youtube.com/channel/UCxTqykWVNZ-_SduU85az5mg"><i class="fab fa-youtube fa-2x"></i></a>
+    <a href="https://twitter.com/mofo_tw"><i class="fab fa-twitter fa-2x"></i></a>
+    <a href="index.html"><i class="fab fa-instagram fa-2x"></i></a>
+   </div>
+
+   <a href="#top" id="bot"><i class="fas fa-chevron-circle-up fa-2x" ></i></a>
+    <script>
+   $(function () {
+       var topBtn = $('#bot');
+       topBtn.hide();
+       //スクロールが500に達したらボタン表示
+       $(window).scroll(function () {
+           if ($(this).scrollTop() > 300) {
+               topBtn.fadeIn();
+           } else {
+               topBtn.fadeOut();
+           }
+       });
+       //スルスルっとスクロールでトップへもどる
+       topBtn.click(function () {
+           $('body,html').animate({
+               scrollTop: 0
+           }, 500);
+           return false;
+       });
+   });
+       </script>
+   <br><br>
+   <p>Copyright © 2020 Mofo All Right Reserved</p>
+  </footer>
+
 </html>
