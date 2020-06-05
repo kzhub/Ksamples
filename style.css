@@ -6,25 +6,34 @@
   text-decoration: none;
 }
 
+.nav{
+  padding-left: 70%;
+  padding-bottom: 2rem;
+  margin-right: 5%;
+}
+
+
+#top{
+  margin-top: 1rem;
+}
+
 body {
 margin: 0px auto;
 padding: 0px;
 text-align: center;
 font-size: 16px;/*rem指定のための基準サイズ */
-background-color: white;
 }
 p{
   font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-family: 'Manrope', sans-serif;
   color: #484848;
 }
 
 li{
   font-family: 'Manrope', sans-serif;
   display: inline;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #333333;
-  margin-top: 2rem;
-  margin-bottom: 10rem;
   margin: 0.3rem;
 }
 
@@ -35,10 +44,9 @@ a:active {color: #008080 ;}
 
 
 img#logo{
-  width:16%;
+  width:60%;
   min-width: 170px;
   margin-bottom: 1rem;
-  margin-top: 1.5rem;
 }
 
 img{
@@ -46,16 +54,17 @@ img{
 }
 
 header{
-  margin-top: 4rem;
+  margin-top:1.5rem;
   margin-bottom: 1rem;
 }
 
 
 main{
-  margin: 2rem;
+  background-color: rgb(247, 247, 247);
 }
 
 section#galla {
+  padding-top: 3rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -102,14 +111,13 @@ div.movie{
 
 
 div.livesec{
-  background-color: #333333;
-  height: 500px;
+
 
 }
 
 div.consec{
   background-color: #white;
-  height: 450px;
+  height: auto;
 }
 
 img.mokuzi{width: 20%;
@@ -146,7 +154,7 @@ div.day{
 div#mask {
   cursor: pointer;
   display: none;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(186, 186, 186, 0.45);
   position: fixed;
   top: 0;
   bottom: 0;
@@ -159,7 +167,7 @@ div#mask {
   display: none;
   background: #fff;
   color: #555;
-  width: 70%;
+  width: 87%;
   height: auto;
   padding: 3%;
   border-radius: 4px;
@@ -204,4 +212,47 @@ p #mail{
   position: fixed;
   top:90%;
   left: 90%;
+}
+
+.cate{
+  text-align: left;
+}
+
+i{
+  padding-right: 0.3rem;
+}
+
+.mida{
+  font-size: 1.2rem;
+  padding-top: 3rem;
+}
+
+
+@media screen and (max-width: 974px) {
+  .nav{
+    padding-left: 60%;
+    padding-bottom: 2rem;
+    margin-right: 5%;
+  }
+  #top{
+    margin-bottom: 7rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .nav{
+    padding-left: 0%;
+    padding-bottom: 2rem;
+    margin-right: 0%;
+  }
+  li{
+
+    margin-bottom: 0.6rem;
+  }
+  img#logo{
+    width:90%;
+    min-width: 170px;
+  }
+  header{
+    margin-top:2rem;
+  }
 }

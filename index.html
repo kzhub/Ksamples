@@ -2,7 +2,7 @@
 <html lang=ja dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Mofo</title>
+    <title>KazukiKoike</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="favicon.ico">
@@ -15,20 +15,33 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <body>
     <header>
-      <div id=top>
-        <a href="index.html"><img id="logo"src="logo.png" alt="logo"></a>
-      </div>
       <div class="nav">
-      <li><a href="music.html">Music</a></li>
-      <li><a href="#live">Live</a></li>
-      <li><a href="bio.html">Bio</a></li>
-      <li><a href="#cont">Contact</a></li>
-      <li><a href="#sns">Link</a></li>
+      <li><i class="far fa-window-maximize"></i><a href="#web">WEB</a></li>
+      <li><i class="fas fa-paint-brush"></i><a href="#graphic">GRAPHIC</a></li>
+      <li><i class="far fa-id-card"></i><a href="#profile">PROFILE</a></li>
+      </div>
+      <div id=top>
+        <a href="index.html"><img id="logo"src="pro.png" alt="logo"></a>
       </div>
       </header>
       <main>
-        <p id="from"><i class="fas fa-map-marker-alt "></i> Fukuoka/Japan</p>
-        <section id="galla">
+        <p class="mida" ><i class="far fa-window-maximize"></i>WEB</p>
+
+        <section id="galla" id="web">
+          <article >
+            <img src="1.png" alt="" class="point" onclick="pen()">
+          </article>
+
+          <article>
+            <img src="2.png" alt="" class="point">
+          </article>
+        </section>
+
+
+
+      <div class="livesec" id="graphic">
+        <p class="mida"><i class="far fa-window-maximize">GRAPHIC</i></p>
+        <section id="galla" id="web">
           <article >
             <img src="1.png" alt="" class="point" onclick="pen()">
           </article>
@@ -46,20 +59,7 @@
           </article>
         </section>
 
-      </main>
-
-      <div class="livesec" id="live">
-        <img src="index2.png" class="mokuzi2">
-        <div class="day">
-
-      </div>
-
-      <div class="consec" id="cont">
-        <img src="index3.png" alt="" class="mokuzi"><i class="fas fa-microphone-alt fa-3x"></i>
-
-       <div id="mailbox">
-        <p id="mail">Mail</p>
-      </div>
+      <div class="consec" id="profile">
       </div>
 <div id="mask"  onclick="pen3()">
 </div>
@@ -71,24 +71,18 @@
 </section>
 
 <section id="modal2">
-  <div class="movie-wrap">
-<iframe width="673" height="379" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
 </section>
-
+</main>
   </body>
 
   <footer>
-    <div id="sns">
-
-   </div>
 
    <a href="#top" id="bot"><i class="fas fa-chevron-circle-up fa-2x" ></i></a>
     <script>
    $(function () {
        var topBtn = $('#bot');
        topBtn.hide();
-       //スクロールが500に達したらボタン表示
+       //btnop
        $(window).scroll(function () {
            if ($(this).scrollTop() > 300) {
                topBtn.fadeIn();
@@ -96,7 +90,7 @@
                topBtn.fadeOut();
            }
        });
-       //スルスルっとスクロールでトップへもどる
+       //animt topBtn
        topBtn.click(function () {
            $('body,html').animate({
                scrollTop: 0
@@ -106,7 +100,7 @@
    });
        </script>
    <br><br>
-   <p>Copyright © 2020  All Right Reserved</p>
+   <p>Copyright © 2020 KazukiKoike All Right Reserved</p>
   </footer>
 
 </html>
