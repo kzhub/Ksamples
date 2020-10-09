@@ -86,9 +86,6 @@ section#galla img {
   border-radius: 2px;
 }
 
-section#galla img:hover {
-	transform: scale(1.03, 1.03);
-}
 
 footer{
   margin-bottom: 4rem;
