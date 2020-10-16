@@ -73,17 +73,17 @@ section#galla {
 }
 
 section#galla article {
-  width: 480px;
+  width: 200px;
   margin-bottom: 4rem;
   line-height: 150%;
   overflow: hidden;
-  border-radius: 8px;
+  
 }
 
 section#galla img {
   width: 100%;
   transition: 0.5s;
-  border-radius: 2px;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
 }
 
 
