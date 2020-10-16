@@ -18,10 +18,10 @@
 }
 
 body {
-margin: 0px auto;
-padding: 0px;
+
 text-align: center;
 font-size: 16px;/*rem指定のための基準サイズ */
+margin: 0 auto;
 }
 p{
   font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
@@ -65,15 +65,11 @@ main{
 
 section#galla {
   padding-top: 3rem;
-  display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
-  margin-left:9%;
-  margin-right: 7%;
 }
 
 section#galla article {
-  width: 200px;
+  width: 220px;
   margin-bottom: 4rem;
   line-height: 150%;
   overflow: hidden;
@@ -225,31 +221,5 @@ i{
 }
 
 
-@media screen and (max-width: 974px) {
-  .nav{
-    padding-left: 60%;
-    padding-bottom: 2rem;
-    margin-right: 5%;
-  }
-  #top{
-    margin-bottom: 7rem;
-  }
-}
-@media screen and (max-width: 700px) {
-  .nav{
-    padding-left: 0%;
-    padding-bottom: 2rem;
-    margin-right: 0%;
-  }
-  li{
 
-    margin-bottom: 0.6rem;
-  }
-  img#logo{
-    width:90%;
-    min-width: 170px;
-  }
-  header{
-    margin-top:2rem;
-  }
 }
