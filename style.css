@@ -7,12 +7,16 @@
 }
 
 .nav{
-  padding-left: 70%;
-  padding-bottom: 2rem;
-  margin-right: 5%;
+
+}
+.link{
+  text-align: right;
 }
 
-
+#home{
+  width: 20%;
+  min-width: 200px;
+}
 #top{
   margin-top: 1rem;
 }
@@ -227,9 +231,7 @@ i{
 
 @media screen and (max-width: 974px) {
   .nav{
-    padding-left: 60%;
-    padding-bottom: 2rem;
-    margin-right: 5%;
+
   }
   #top{
     margin-bottom: 7rem;
@@ -237,9 +239,7 @@ i{
 }
 @media screen and (max-width: 700px) {
   .nav{
-    padding-left: 0%;
-    padding-bottom: 2rem;
-    margin-right: 0%;
+
   }
   li{
 
