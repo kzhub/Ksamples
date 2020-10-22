@@ -87,7 +87,7 @@ section#galla article {
 section#galla img {
   width: 95%;
   transition: 0.5s;
-  box-shadow: 0 20px 5px 0 rgba(0, 0, 0, .3);
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .3);
 }
 
 
