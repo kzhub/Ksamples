@@ -20,18 +20,29 @@
       <div id=top>
         <div class="nav">
             <img id="home"src="logo.png" alt="logo">
-             <li><a href="#sample">サンプル</a></li>
-        　   <li><a href="#insrtuments">楽器</a></li>
-        　   <li><a href="#musuic">音について</a></li>
-        　   <li><a href="#about">サイトについて</a></li>
           </div>
       </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav class="globalMenuSp">
+          <ul>
+              <li><a href="#">Menu1</a></li>
+              <li><a href="#">Menu2</a></li>
+              <li><a href="#">Menu3</a></li>
+              <li><a href="#">Menu4</a></li>
+              <li><a href="#">Menu5</a></li>
+          </ul>
+      </nav>
     </header>
 
       <main>
 
         <div class="livesec" id="graphic">
-
+          <h3 class="ca">サンプルパック</h3>
            <section id="galla" id="web">
              <article>
                <img src="gtj.jpg" alt="" class="point">
@@ -63,7 +74,7 @@
           </div>
 
       <div class="livesec" id="graphic">
-
+　　　　　<h3 class="ca">サンプル楽器</h3>
          <section id="galla" id="web">
            <article >
             <img src="guitar2.jpg" alt="" class="point">
@@ -112,6 +123,18 @@
              scrollTop: 0
          }, 500);
          return false;
+     });
+ });
+
+ $(function() {
+     $('.hamburger').click(function() {
+         $(this).toggleClass('active');
+
+         if ($(this).hasClass('active')) {
+             $('.globalMenuSp').addClass('active');
+         } else {
+             $('.globalMenuSp').removeClass('active');
+         }
      });
  });
      </script>
