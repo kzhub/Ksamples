@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="favicon.ico">
-    <script type="text/javascript" src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
@@ -15,25 +15,32 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
   <body>
+
     <header>
-
-      <div class="nav">
-        <img id="home"src="logo.png" alt="logo">
-      　  <li><a href="#sample">サンプル</a></li>
-      　  <li><a href="#insrtuments">楽器</a></li>
-      　  <li><a href="#musuic">音について</a></li>
-      　  <li><a href="#about">サイトについて</a></li>
-      </div>
-
       <div id=top>
-
+        <div class="nav">
+            <img id="home"src="logo.png" alt="logo">
+             <li><a href="#sample">サンプル</a></li>
+        　   <li><a href="#insrtuments">楽器</a></li>
+        　   <li><a href="#musuic">音について</a></li>
+        　   <li><a href="#about">サイトについて</a></li>
+          </div>
       </div>
     </header>
+
       <main>
 
         <div class="livesec" id="graphic">
 
            <section id="galla" id="web">
+             <article>
+               <img src="gtj.jpg" alt="" class="point">
+             </article>
+
+             <article>
+               <img src="boc.jpg" alt="" class="point">
+             </article>
+
              <article >
               <a href="sample1.html"><img src="ja3.jpg" alt="" class="point"></a>
              </article>
@@ -45,10 +52,12 @@
              <article>
                <img src="Jacke2expo.jpg" alt="" class="point">
              </article>
-
              <article>
-               <img src="ja3.jpg" alt="" class="point">
+
              </article>
+
+
+
 
             </section>
           </div>
@@ -69,6 +78,9 @@
            <article>
             <img src=".jpg" alt="" class="point">
            </article>
+           <article>
+            <img src=".jpg" alt="" class="point">
+           </article>
 
 
           </section>
@@ -82,27 +94,28 @@
   <footer>
    <p>Copyright © 2020 KazukiKoike All Right Reserved</p>
   </footer>
+  <script>
+ $(function () {
+     var topBtn = $('#bot');
+     topBtn.hide();
+     //btnop
+     $(window).scroll(function () {
+         if ($(this).scrollTop() > 300) {
+             topBtn.fadeIn();
+         } else {
+             topBtn.fadeOut();
+         }
+     });
+     //animt topBtn
+     topBtn.click(function () {
+         $('body,html').animate({
+             scrollTop: 0
+         }, 500);
+         return false;
+     });
+ });
+     </script>
 </body>
 
-    <script>
-   $(function () {
-       var topBtn = $('#bot');
-       topBtn.hide();
-       //btnop
-       $(window).scroll(function () {
-           if ($(this).scrollTop() > 300) {
-               topBtn.fadeIn();
-           } else {
-               topBtn.fadeOut();
-           }
-       });
-       //animt topBtn
-       topBtn.click(function () {
-           $('body,html').animate({
-               scrollTop: 0
-           }, 500);
-           return false;
-       });
-   });
-       </script>
+
 </html>
