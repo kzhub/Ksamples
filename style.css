@@ -78,7 +78,7 @@ main{
   background-color: rgb(251, 251, 251);
 }
 
-section#galla {
+section.galla {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -86,21 +86,24 @@ section#galla {
   margin-right: 7%;
 }
 
-section#galla article {
+section.galla article {
   width: 20%;
   margin-bottom: 2rem;
   line-height: 150%;
   overflow: hidden;
-
 }
 
-section#galla img {
+div.grad article{
+  width: 40%;
+}
+
+section.galla img {
   width: 95%;
   transition: 0.5s;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .3);
 }
 
-section#galla img:hover{
+section.galla img:hover{
   transform: scale(1.01);
 transition-duration: 0.5s;
 opacity: 0.6;
@@ -125,6 +128,7 @@ p#from{
 
 .grad{
   margin:5rem;
+  padding-top: 5rem;
   height: auto;
   background:linear-gradient(-135deg, #F1F2B5, #135058);
   text-align:center;
@@ -386,7 +390,7 @@ nav.globalMenuSp.active {
 }
 
 @media screen and (max-width: 900px){
-  section#galla article {
+  section.galla article {
     width: 40%;
   }
 }

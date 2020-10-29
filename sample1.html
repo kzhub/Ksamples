@@ -16,23 +16,30 @@
 
   <body>
     <header>
-      <a href="index.html"><img src="logo.png" alt="logo" ></a>
-      <div class="nav">
-      　<li><a href="index.html#sample">サンプル</a></li>
-      　<li><a href="index.html#insrtuments">楽器</a></li>
-      　<li><a href="index.html#musuic">音について</a></li>
-      　<li><a href="index.html#about">サイトについて</a></li>
-      </div>
-
       <div id=top>
-
+        <div class="nav">
+            <a href="index.html"><img id="home"src="logo.png" alt="logo"></a>
       </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav class="globalMenuSp">
+          <ul>
+              <li><a href="#">Menu1</a></li>
+              <li><a href="#">Menu2</a></li>
+              <li><a href="#">Menu3</a></li>
+              <li><a href="#">Menu4</a></li>
+              <li><a href="#">Menu5</a></li>
+          </ul>
+      </nav>
     </header>
+
       <main>
      <div class="grad">
-
-
-        <section id="galla" id="web">
+        <section class="galla">
           <article >
             <img  src="ja3.jpg" alt="" class="point">
           </article>
@@ -56,27 +63,41 @@
   <footer>
    <p>Copyright © 2020 KazukiKoike All Right Reserved</p>
   </footer>
+
+  <script>
+ $(function () {
+     var topBtn = $('#bot');
+     topBtn.hide();
+     //btnop
+     $(window).scroll(function () {
+         if ($(this).scrollTop() > 300) {
+             topBtn.fadeIn();
+         } else {
+             topBtn.fadeOut();
+         }
+     });
+     //animt topBtn
+     topBtn.click(function () {
+         $('body,html').animate({
+             scrollTop: 0
+         }, 500);
+         return false;
+     });
+ });
+
+ $(function() {
+     $('.hamburger').click(function() {
+         $(this).toggleClass('active');
+
+         if ($(this).hasClass('active')) {
+             $('.globalMenuSp').addClass('active');
+         } else {
+             $('.globalMenuSp').removeClass('active');
+         }
+     });
+ });
+     </script>
 </body>
 
-    <script>
-   $(function () {
-       var topBtn = $('#bot');
-       topBtn.hide();
-       //btnop
-       $(window).scroll(function () {
-           if ($(this).scrollTop() > 300) {
-               topBtn.fadeIn();
-           } else {
-               topBtn.fadeOut();
-           }
-       });
-       //animt topBtn
-       topBtn.click(function () {
-           $('body,html').animate({
-               scrollTop: 0
-           }, 500);
-           return false;
-       });
-   });
-       </script>
+
 </html>
