@@ -393,6 +393,9 @@ nav.globalMenuSp.active {
   section.galla article {
     width: 40%;
   }
+  div.grad article{
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 700px) {
