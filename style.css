@@ -134,11 +134,17 @@ p#from{
   text-align:center;
   border-radius: 5px;
 }
+#bacolo1{
+
+}
 #bacolo2{
   background:linear-gradient(-135deg, #F1F2B5, #135058);
 }
 #bacolo3{
   background:linear-gradient(-135deg, #F1F2B5, #135058);
+}
+#bacolo4{
+  background:linear-gradient(-135deg, #7500ff, #280863);
 }
 .letx{
   text-align: left;
@@ -146,6 +152,12 @@ p#from{
 }
 #wmo{
   color: #f5f5f5;
+}
+
+.aboutex{
+  text-align: left;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
 }
 
 div.movie{
