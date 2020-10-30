@@ -130,9 +130,15 @@ p#from{
   margin:5rem;
   padding-top: 5rem;
   height: auto;
-  background:linear-gradient(-135deg, #F1F2B5, #135058);
+
   text-align:center;
   border-radius: 5px;
+}
+#bacolo2{
+  background:linear-gradient(-135deg, #F1F2B5, #135058);
+}
+#bacolo3{
+  background:linear-gradient(-135deg, #F1F2B5, #135058);
 }
 .letx{
   text-align: left;

@@ -31,26 +31,25 @@
 
       <nav class="globalMenuSp">
           <ul>
-              <li><a href="#">Menu1</a></li>
-              <li><a href="#">Menu2</a></li>
-              <li><a href="#">Menu3</a></li>
-              <li><a href="#">Menu4</a></li>
-              <li><a href="#">Menu5</a></li>
+              <li><a href="index.html#pack">Sample Pack</a></li>
+              <li><a href="index.html#inst">Sample Instruments</a></li>
+              <li><a href="index.html#theo">Sound Theory</a></li>
+              <li><a href="index.html#abo">About</a></li>
           </ul>
       </nav>
     </header>
 
       <main>
 
-        <div class="livesec" id="graphic">
+        <div class="livesec" >
           <h3 class="ca">Sample Pack</h3>
-           <section class="galla" id="">
+           <section class="galla" id="pack">
              <article>
-               <img src="gtj.jpg" alt="" class="point">
+               <a href="sample2.html"><img src="gtj.jpg" alt="" class="point"></a>
              </article>
 
              <article>
-               <img src="boc.jpg" alt="" class="point">
+              <a href="sample3.html"> <img src="boc.jpg" alt="" class="point"></a>
              </article>
 
              <article >
@@ -58,11 +57,11 @@
              </article>
 
              <article>
-              <img src="IMG_6565.jpg" alt="" class="point">
+              <a href="sample4.html"><img src="IMG_6565.jpg" alt="" class="point"></a>
              </article>
 
              <article>
-               <img src="Jacke2expo.jpg" alt="" class="point">
+              <a href="sample5.html"> <img src="Jacke2expo.jpg" alt="" class="point"></a>
              </article>
              <article>
 
@@ -74,15 +73,15 @@
             </section>
           </div>
 
-      <div class="livesec" id="graphic">
+      <div class="livesec">
 　　　　　<h3 class="ca">Sample Instruments</h3>
-         <section class="galla" id="">
+         <section class="galla" id="inst">
            <article >
-            <img src="guitar2.jpg" alt="" class="point">
+            <a href="sample6.html"><img src="guitar2.jpg" alt="" class="point"></a>
            </article>
 
            <article>
-            <img src="bass.jpg" alt="" class="point">
+            <a href="sample7.html"><img src="bass.jpg" alt="" class="point"></a>
            </article>
            <article>
             <img src="jpg" alt="" class="point">
@@ -97,6 +96,27 @@
 
           </section>
         </div>
+
+
+        <div class="livesec">
+  　　　　　<h3 class="ca">Sound Theory</h3>
+           <section class="galla" id="theo">
+             <article >
+
+             </article>
+
+            </section>
+          </div>
+
+          <div class="livesec">
+    　　　　　<h3 class="ca">About</h3>
+             <section class="galla" id="abo">
+               <article >
+
+               </article>
+
+              </section>
+            </div>
 
 
       <a href="#top" id="bot"><i class="fas fa-chevron-circle-up fa-2x" ></i></a>
@@ -137,6 +157,12 @@
              $('.globalMenuSp').removeClass('active');
          }
      });
+     $('.globalMenuSp').click(function() {
+         $(this).removeClass('active');
+       });
+       $('.globalMenuSp').click(function() {
+           $('.hamburger').toggleClass('active');
+         });
  });
      </script>
 </body>
