@@ -16,6 +16,11 @@ font-family: 'Lato', sans-serif;
 font-weight: 300;
 color: rgb(59, 59, 59);
 }
+.ml{
+  margin-right: 10px;
+  height: 16px;
+  width: 16px;
+}
 .nav{
   padding-left: 4rem;
   text-align: left;
