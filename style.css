@@ -95,7 +95,7 @@ section.galla {
 
 section.galla article {
   width: 20%;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   line-height: 150%;
   overflow: hidden;
 }
@@ -110,12 +110,18 @@ section.galla img {
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .3);
 }
 
-section.galla img:hover{
+.livesec img:hover{
   transform: scale(1.01);
 transition-duration: 0.5s;
 opacity: 0.6;
 }
 
+.dlb{
+  padding: 1rem;
+  background-color: rgb(74, 74, 74);
+  border-radius: 3px;
+  color: rgb(247, 247, 247);
+}
 
 
 footer{
@@ -139,19 +145,18 @@ p#from{
   height: auto;
 
   text-align:center;
-  border-radius: 5px;
 }
 #bacolo1{
 
 }
 #bacolo2{
-  background:linear-gradient(-135deg, #F1F2B5, #135058);
+  background:linear-gradient(-135deg,#bebebe, #f1f1f1);
 }
 #bacolo3{
-  background:linear-gradient(-135deg, #F1F2B5, #135058);
+  background:linear-gradient(-135deg, #1ebf80, #a2d2af);
 }
 #bacolo4{
-  background:linear-gradient(-135deg, #7500ff, #280863);
+  background:linear-gradient(-135deg, #ead8ff, #d3c0ff);
 }
 .letx{
   text-align: left;
