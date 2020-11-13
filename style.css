@@ -97,11 +97,11 @@ section.galla article {
   width: 20%;
   margin-bottom: 4rem;
   line-height: 150%;
-  overflow: hidden;
 }
 
 div.grad article{
   width: 40%;
+
 }
 
 section.galla img {
@@ -155,7 +155,7 @@ p#from{
 }
 .letx{
   text-align: left;
-  margin: 1rem;
+  margin: 0.5rem;
 }
 #wmo{
   color: #f5f5f5;
