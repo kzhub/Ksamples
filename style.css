@@ -81,11 +81,16 @@ header{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   border-bottom:0.1px solid rgb(232 232 232);
-
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .05);
+  position: relative;
+  z-index: 100;
 }
+
 
 main{
   background-color: rgb(251, 251, 251);
+  position: relative;
+  z-index: 10;
 }
 
 section.galla {
