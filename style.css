@@ -413,10 +413,11 @@ nav.globalMenuSp {
 }
 
 nav.globalMenuSp ul {
-  background: #ccc;
+  background: rgb(255 255 255 / 50%);
   margin: 0 auto;
   padding: 0;
   width: 100%;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .2);
 }
 
 nav.globalMenuSp ul li {
@@ -428,7 +429,7 @@ nav.globalMenuSp ul li:last-child {
   padding-bottom: 0;
 }
 nav.globalMenuSp ul li a:hover{
-  color:#fff;
+  color:rgb(129, 129, 129);
 }
 
 nav.globalMenuSp ul li a {
@@ -436,6 +437,8 @@ nav.globalMenuSp ul li a {
   color: #000;
   padding: 1.5em 0;
   text-decoration :none;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 300;
 }
 
 /* このクラスを、jQueryで付与・削除する */
