@@ -457,7 +457,7 @@ nav.globalMenuSp.active {
 
 @media screen and (max-width: 700px) {
   .nav{
-    padding-left: 3rem;
+    padding-left: 1.2rem;
   }
   li{
 
