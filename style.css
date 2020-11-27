@@ -127,9 +127,7 @@ opacity: 0.6;
 
 
 
-footer{
-  margin-bottom: 4rem;
-}
+
 
 div#sns  a{
   margin-left: 0.5rem;
@@ -143,7 +141,6 @@ p#from{
 }
 
 .grad{
-  margin:5rem;
   padding-top: 5rem;
   height: auto;
 
@@ -152,9 +149,7 @@ p#from{
 #bacolo1{
 
 }
-#bacolo2{
-  background:linear-gradient(-135deg,#bebebe, #f1f1f1);
-}
+
 #bacolo3{
   background:linear-gradient(-135deg, #1ebf80, #a2d2af);
 }
@@ -163,10 +158,11 @@ p#from{
 }
 .letx{
   text-align: left;
-  margin: 0.5rem;
+  margin-top: 1rem;
 }
 #wmo{
-  color: #f5f5f5;
+  font-family: proxima-nova, sans-serif;
+  color:rgb(45, 45, 45);
 }
 
 .aboutex{
@@ -225,6 +221,8 @@ div.day{
 footer{
   font-size: 0.8rem;
   padding-top:2rem;
+  padding-bottom: 4rem;
+  background-color: rgb(251, 251, 251);
 }
 
 div#mask {
@@ -273,6 +271,8 @@ div#mask {
 .point{
   cursor: pointer;
   animation: fadeIn 2s ease 0s 1 normal;
+  position: relative;
+  z-index: 10;
 }
 @keyframes fadeIn {
   0% {opacity: 0}
@@ -309,10 +309,12 @@ i{
 }
 a.top{
   color: rgb(70, 70, 70);
-  font-family: 'Lato', sans-serif;
-  font-weight: 100;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 300;
   border-radius: 2px;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.08);
+  position: relative;
+  z-index: 1;
 }
 
 .hamburger {
@@ -447,9 +449,6 @@ nav.globalMenuSp.active {
   }
   div.grad article{
     width: 80%;
-  }
-  .grad{
-    margin: 2rem;
   }
 }
 
