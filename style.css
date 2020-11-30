@@ -46,6 +46,7 @@ margin: 0px auto;
 padding: 0px;
 text-align: center;
 font-size: 16px;/*rem指定のための基準サイズ */
+background-color: rgb(251, 251, 251);
 }
 p{
   font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
@@ -115,7 +116,7 @@ section.galla article {
 }
 
 div.grad article{
-  width: 40%;
+  width: 44%;
 
 }
 
@@ -175,7 +176,7 @@ p#from{
 
 .aboutex{
   text-align: left;
-  padding-bottom: 3rem; 
+  padding-bottom: 3rem;
   margin-top: 1rem;
 }
 
