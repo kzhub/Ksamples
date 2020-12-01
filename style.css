@@ -5,6 +5,7 @@
   list-style: none;
   text-decoration: none;
 }
+
 .ca{
  color: rgb(55, 54, 54);
  padding-top: 5rem;
@@ -15,6 +16,7 @@
  font-weight: 300;
  color: rgb(37 ,35 ,35);
 }
+
 
 
 .ml{
@@ -37,6 +39,34 @@
 #top{
   margin-top: 1rem;
 
+}
+
+.tecim{
+  width: 40%;
+  min-width: 200px;
+}
+#theo{
+  margin-left: 0;
+  margin-right: 0;
+}
+#theo img{
+  width: 40%;
+  min-width: 300px;
+}
+.tut li{
+  display: list-item;
+  font-size: 1rem;
+  margin: 0;
+  list-style: disc;
+  list-style-position: inside;
+}
+
+.num li{
+  display: list-item;
+  font-size: 1rem;
+  margin: 0;
+  list-style: decimal;
+  list-style-position: inside;
 }
 
 
@@ -489,10 +519,7 @@ nav.globalMenuSp.active {
     margin-left: 0%;
     margin-right: 0%;
   }
-  .aboutex {
-    margin-left: 6%;
-    margin-right: 6%;
-  }
+
   .ca{
     margin-left: 6%;
   }
