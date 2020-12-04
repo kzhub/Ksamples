@@ -131,6 +131,9 @@ section.galla {
   margin-left:9%;
   margin-right: 9%;
 }
+section#inst{
+  margin-bottom: 2rem;
+}
 section.galla2 {
   display: block;
   flex-wrap: wrap;
